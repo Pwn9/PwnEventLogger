@@ -1,0 +1,7 @@
+main: com.pwn9.PwnEventLogger.PwnEventLogger
+name: PwnEventLogger
+version: 0.0.1
+author: tremor77
+description: Simple logger for various events
+website: http://pwn9.com
+api-version: 1.13
