@@ -28,7 +28,7 @@ public class StructureGrowListener implements Listener
 		String downBlock = String.valueOf(e.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
 		
 		String curBiome = String.valueOf(e.getLocation().getBlock().getBiome());
-		PwnEventLogger.logToFile("Structure Event for: " + curBlock + " - In biome: " + curBiome + " - Downblock: " + downBlock + " - Species: " + eventBlock + " - at: " + coords, "StructureGrow");
+		PwnEventLogger.logToFile("StructureGrowEvent: " + curBlock + ", Biome: " + curBiome + ", DownBlock: " + downBlock + ", Species: " + eventBlock + ", Coords: " + coords, "StructureGrow");
 	}
 	
 }

@@ -25,6 +25,7 @@ public class PwnEventLogger extends JavaPlugin
 		
 		new BlockGrowListener(this);
 		new StructureGrowListener(this);
+		new BlockSpreadListener(this);
 		
 		PwnEventLogger.dataFolder = getDataFolder();
 		
