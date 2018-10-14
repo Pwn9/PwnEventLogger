@@ -1,0 +1,8 @@
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockGrowEvent.html
+BlockGrowEvent: false
+
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockSpreadEvent.html
+BlockSpreadEVent: false
+
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/world/StructureGrowEvent.html
+StructureGrowEvent: false

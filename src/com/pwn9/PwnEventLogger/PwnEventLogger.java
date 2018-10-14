@@ -17,20 +17,34 @@ public class PwnEventLogger extends JavaPlugin
 {
 	public static PwnEventLogger instance;
 	
+	// get the plugin data folder
 	public static File dataFolder;
+	
+	// config values
+	public static Boolean BlockGrowEvent;
+	public static Boolean BlockSpreadEvent;
+	public static Boolean StructureGrowEvent;
 	
 	public void onEnable()
 	{
 		instance = this;
 		
+		this.saveDefaultConfig();
+		
+		// Setup listener classes
 		new BlockGrowListener(this);
 		new StructureGrowListener(this);
 		new BlockSpreadListener(this);
 		
+		// Get plugin data folders
 		PwnEventLogger.dataFolder = getDataFolder();
+		
+		// Load configurable values
+		Config.LoadConfig();
 		
 	}
 	
+	// function to log a message to a file
     public static void logToFile(String message, String fileName) 
     {   
     	try
@@ -59,6 +73,7 @@ public class PwnEventLogger extends JavaPlugin
 	    }
     }    
     
+    // makes a pretty date
     public static String getDate() 
     {
     	  String s;

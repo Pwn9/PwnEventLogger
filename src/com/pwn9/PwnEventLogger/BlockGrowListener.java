@@ -19,6 +19,9 @@ public class BlockGrowListener implements Listener
 	@EventHandler(ignoreCancelled = false)
 	public void blockGrow(BlockGrowEvent e) 
 	{
+		// return if config not set
+		if (!PwnEventLogger.BlockGrowEvent) return;
+		
 		String curBlock = String.valueOf(e.getBlock().getType());	
 		
 		String downBlock = String.valueOf(e.getBlock().getRelative(BlockFace.DOWN).getType());

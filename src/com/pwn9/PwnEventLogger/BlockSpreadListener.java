@@ -18,6 +18,9 @@ public class BlockSpreadListener implements Listener
 	@EventHandler(ignoreCancelled = false)
 	public void blockGrow(BlockSpreadEvent e) 
 	{
+		// return if config not set
+		if (!PwnEventLogger.BlockSpreadEvent) return;
+		
 		String curBlock = String.valueOf(e.getBlock().getType());	
 		
 		String sourceBlock = String.valueOf(e.getSource().getType());
