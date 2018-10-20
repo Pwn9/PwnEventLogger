@@ -6,3 +6,7 @@ BlockSpreadEvent: false
 
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/world/StructureGrowEvent.html
 StructureGrowEvent: false
+
+BlockFormEvent: false
+
+EntityBlockFormEvent: false

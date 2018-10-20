@@ -1,9 +1,11 @@
-package com.pwn9.PwnEventLogger;
+package com.pwn9.PwnEventLogger.BlockEvents;
 
 import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockGrowEvent;
+
+import com.pwn9.PwnEventLogger.PwnEventLogger;
 
 public class BlockGrowListener implements Listener
 {

@@ -1,8 +1,10 @@
-package com.pwn9.PwnEventLogger;
+package com.pwn9.PwnEventLogger.BlockEvents;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockSpreadEvent;
+
+import com.pwn9.PwnEventLogger.PwnEventLogger;
 
 public class BlockSpreadListener implements Listener
 {
