@@ -32,6 +32,8 @@ public class EntityBlockFormListener implements Listener
 		String coords = String.valueOf(e.getBlock().getLocation());
 		
 		PwnEventLogger.logToFile("EntityBlockFormEvent: " + curBlock + ", Biome: " + curBiome + ", Created By: " + entity + ", Coords: " + coords, "EntityBlockForm");
+		
+		if(PwnEventLogger.CancelEntityBlockFormEvent)e.setCancelled(true);
 	}
 	
 }

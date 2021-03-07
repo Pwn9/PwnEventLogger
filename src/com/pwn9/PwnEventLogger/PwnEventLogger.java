@@ -35,6 +35,13 @@ public class PwnEventLogger extends JavaPlugin
 	public static Boolean EntityBlockFormEvent;
 	public static Boolean BlockFertilizeEvent;
 	
+	public static Boolean CancelBlockGrowEvent;
+	public static Boolean CancelBlockSpreadEvent;
+	public static Boolean CancelStructureGrowEvent;
+	public static Boolean CancelBlockFormEvent;
+	public static Boolean CancelEntityBlockFormEvent;
+	public static Boolean CancelBlockFertilizeEvent;	
+	
 	public void onEnable()
 	{
 		instance = this;

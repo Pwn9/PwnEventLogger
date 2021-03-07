@@ -32,6 +32,8 @@ public class BlockFertilizeListener implements Listener
 		String curBlock = String.valueOf(e.getBlock().getType());
 		
 		PwnEventLogger.logToFile("BlockFertilizeEvent: Player " + curPlayer + ", Coords: " + coords + ", Biome: " + curBiome + ", Block: " + curBlock, "BlockFertilize");
+		
+		if(PwnEventLogger.CancelBlockFertilizeEvent)e.setCancelled(true);
 	}
 	
 }

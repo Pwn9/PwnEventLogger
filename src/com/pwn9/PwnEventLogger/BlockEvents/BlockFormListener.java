@@ -32,6 +32,8 @@ public class BlockFormListener implements Listener
 		String coords = String.valueOf(e.getBlock().getLocation());
 		
 		PwnEventLogger.logToFile("BlockFormEvent: " + curBlock + ", Biome: " + curBiome + ", NewBlock: " + newBlock + ", Coords: " + coords, "BlockForm");
+		
+		if(PwnEventLogger.CancelBlockFormEvent)e.setCancelled(true);
 	}
 	
 }

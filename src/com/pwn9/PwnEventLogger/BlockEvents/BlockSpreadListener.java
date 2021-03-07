@@ -18,7 +18,7 @@ public class BlockSpreadListener implements Listener
 	}
 	
 	@EventHandler(ignoreCancelled = false)
-	public void blockGrow(BlockSpreadEvent e) 
+	public void blockSpread(BlockSpreadEvent e) 
 	{
 		// return if config not set
 		if (!PwnEventLogger.BlockSpreadEvent) return;
@@ -32,6 +32,8 @@ public class BlockSpreadListener implements Listener
 		String coords = String.valueOf(e.getBlock().getLocation());
 		
 		PwnEventLogger.logToFile("BlockSpreadEvent: " + curBlock + ", Biome: " + curBiome + ", SourceBlock: " + sourceBlock + ", Coords: " + coords, "BlockSpread");
+		
+		if(PwnEventLogger.CancelBlockSpreadEvent)e.setCancelled(true);
 	}
 	
 }

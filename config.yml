@@ -1,17 +1,23 @@
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockGrowEvent.html
 BlockGrowEvent: false
+CancelBlockGrowEvent: false
 
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockSpreadEvent.html
 BlockSpreadEvent: false
+CancelBlockSpreadEvent: false
 
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/world/StructureGrowEvent.html
 StructureGrowEvent: false
+CancelStructureGrowEvent: false
 
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/block/BlockFormEvent.html
 BlockFormEvent: false
+CancelBlockFormEvent: false
 
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/block/EntityBlockFormEvent.html
 EntityBlockFormEvent: false
+CancelEntityBlockFormEvent: false
 
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/block/BlockFertilizeEvent.html
 BlockFertilizeEvent: false
+CancelBlockFertilizeEvent: false

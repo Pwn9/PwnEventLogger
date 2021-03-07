@@ -35,6 +35,8 @@ public class StructureGrowListener implements Listener
 		String curBiome = String.valueOf(e.getLocation().getBlock().getBiome());
 		
 		PwnEventLogger.logToFile("StructureGrowEvent: " + curBlock + ", Biome: " + curBiome + ", DownBlock: " + downBlock + ", Species: " + eventBlock + ", Coords: " + coords, "StructureGrow");
+		
+		if(PwnEventLogger.CancelStructureGrowEvent)e.setCancelled(true);
 	}
 	
 }

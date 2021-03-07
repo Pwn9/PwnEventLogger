@@ -33,6 +33,8 @@ public class BlockGrowListener implements Listener
 		String coords = String.valueOf(e.getBlock().getLocation());
 		
 		PwnEventLogger.logToFile("BlockGrowEvent: " + curBlock + ", Biome: " + curBiome + ", DownBlock: " + downBlock + ", Coords: " + coords, "BlockGrow");
+		
+		if(PwnEventLogger.CancelBlockGrowEvent)e.setCancelled(true);
 	}
 	
 }
