@@ -9,6 +9,7 @@ public class Config
 		PwnEventLogger.StructureGrowEvent = PwnEventLogger.instance.getConfig().getBoolean("StructureGrowEvent", false);
 		PwnEventLogger.BlockFormEvent = PwnEventLogger.instance.getConfig().getBoolean("BlockFormEvent", false);
 		PwnEventLogger.EntityBlockFormEvent = PwnEventLogger.instance.getConfig().getBoolean("EntityBlockEvent", false);
+		PwnEventLogger.BlockFertilizeEvent = PwnEventLogger.instance.getConfig().getBoolean("BlockFertilizeEvent", false);
 		
 	}
 }

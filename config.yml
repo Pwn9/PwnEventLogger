@@ -7,6 +7,11 @@ BlockSpreadEvent: false
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/world/StructureGrowEvent.html
 StructureGrowEvent: false
 
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/block/BlockFormEvent.html
 BlockFormEvent: false
 
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/block/EntityBlockFormEvent.html
 EntityBlockFormEvent: false
+
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/block/BlockFertilizeEvent.html
+BlockFertilizeEvent: false

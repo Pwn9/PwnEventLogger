@@ -13,6 +13,7 @@ import java.util.Date;
 //import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.pwn9.PwnEventLogger.BlockEvents.BlockFertilizeListener;
 import com.pwn9.PwnEventLogger.BlockEvents.BlockFormListener;
 import com.pwn9.PwnEventLogger.BlockEvents.BlockGrowListener;
 import com.pwn9.PwnEventLogger.BlockEvents.BlockSpreadListener;
@@ -32,6 +33,7 @@ public class PwnEventLogger extends JavaPlugin
 	public static Boolean StructureGrowEvent;
 	public static Boolean BlockFormEvent;
 	public static Boolean EntityBlockFormEvent;
+	public static Boolean BlockFertilizeEvent;
 	
 	public void onEnable()
 	{
@@ -45,6 +47,7 @@ public class PwnEventLogger extends JavaPlugin
 		new BlockSpreadListener(this);
 		new BlockFormListener(this);
 		new EntityBlockFormListener(this);
+		new BlockFertilizeListener(this);
 		
 		// Get plugin data folders
 		PwnEventLogger.dataFolder = getDataFolder();
